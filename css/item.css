@@ -1,0 +1,42 @@
+/*item*/
+
+.item {
+	width: 303px;
+	margin-bottom: 42px;
+}
+
+.item .item__img {
+	height: 406px;
+	background-color: #171719;
+	position: relative;
+	margin-bottom: 28px;
+}
+
+.item .item__img img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 100%;
+	width: inherit;
+}
+
+.item h4 {
+	font-family: Roboto-Medium;
+	font-size: 17px;
+	color: #fff;
+	margin: 0 0 16px;
+	line-height: 1.5;
+}
+
+.item p {
+	font-family: Roboto-Regular;
+	font-size: 14px;
+	color: #b7b9be;
+}
+
+@media screen and (max-width: 425px) {
+	.item {
+		width: 100%;
+	}
+}

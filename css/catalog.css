@@ -1,0 +1,145 @@
+/*catalog*/
+
+.catalog {
+	padding-top: 90px;
+	background-color: #070707;
+	padding-bottom: 40px;
+}
+
+.catalog .catalog__container-info {
+	padding-top: 72px;
+	z-index: 3;
+}
+
+.catalog .catalog__container-info h2 {
+	font-family: Roboto-Regular;
+	font-size: 12px;
+	color: #b7b9be;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+.catalog .catalog__container-info h3 {
+	font-family: Roboto-Medium;
+	font-size: 30px;
+	color: #ffffff;
+	letter-spacing: 1px;
+	margin: 22px 0 30px;
+}
+
+.catalog .catalog__container-info p {
+	font-family: Roboto-Regular;
+	font-size: 17px;
+	color: #ffffff;
+	letter-spacing: 2px;
+	margin-bottom: 36px;
+}
+
+.catalog .catalog__list {
+	margin-bottom: 44px;
+}
+
+.catalog .catalog__list a {
+	display: block;	
+	font-family: Roboto-Regular;
+	font-size: 15px;
+	color: #ffffff;
+	position: relative;
+	padding-left: 18px;
+	text-decoration: none;
+	transition: 0.3s color;
+	line-height: 1;
+}
+
+.catalog .catalog__list a:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.catalog .catalog__list a::before {
+	content: "";
+	position: absolute;
+	left: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 10px;
+	height: 6px;
+	background-image: url(../img/list-arrow.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.catalog .catalog__list a:hover {
+	color: #ff6f0f;
+}
+
+.catalog .catalog__nav {
+	display: flex;
+	align-items: center;
+}
+
+.catalog .catalog__arrow {
+	cursor: pointer;
+	transition: 0.3s transform, 0.3s opacity;
+}
+
+.catalog .catalog__arrow-disabled {
+	opacity: 0.5;
+}
+
+.catalog .catalog__delimetr {
+	width: 2px;
+	height: 20px;
+	margin: 0 24px;
+	background-color: #ffffff;
+}
+
+.catalog .catalog__arrow-prev:hover {
+	transform: translateX(-5px);
+}
+
+.catalog .catalog__arrow-next:hover {
+	transform: translateX(5px);
+}
+
+.catalog .catalog__slider {
+	width: 303px;
+}
+
+.catalog__container-slider {
+	position: relative;
+}
+
+.catalog .catalog__container-slider::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: -100%;
+	top: 0;
+	background-color: #070707;
+	z-index: 2;
+}
+
+.catalog .owl-carousel .owl-stage-outer {
+	overflow: visible; 
+}
+
+@media screen and (max-width: 1150px) {
+	.catalog .catalog__container-info {
+		padding-top: 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.catalog .catalog__container-info {
+		padding-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.catalog .catalog__slider {
+		width: 100%;
+	}
+}
